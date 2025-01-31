@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&family=Rubik+Mono+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo Da 2", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    background: linear-gradient(45deg, green, yellow, red);
+    background-repeat: no-repeat;
+    background-size: 300% 300%;
+    height: 50vh;
+    animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+nav {
+    position: relative;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+    padding: 10px;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 810px;
+}
+
+nav ul li {
+    padding: 0px 7px;
+    margin: 0px 3px;
+    height: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.indicator {
+    position: absolute;
+    background: linear-gradient(109deg, #822b2300, #ffffffed);
+    z-index: -10;
+    border-radius: 4px;
+    transition: 0.5s;
+    height: 37px;
+    width: 61px;
+    right: 796px;
+    top: 15px;
+}
+
+
+/* THE NAWBAR HOVER STYLES HERE */
+.about:hover~.indicator {
+    width: 78px;
+    right: 716px;
+}
+
+.institutions:hover~.indicator {
+    right: 614px;
+    width: 96px;
+}
+
+.wings:hover~.indicator {
+    width: 61px;
+    right: 552px;
+}
+
+.members:hover~.indicator {
+    width: 80px;
+    right: 470px;
+}
+
+.shows:hover~.indicator {
+    width: 92px;
+    right: 375px;
+}
+
+.recruitment:hover~.indicator {
+    width: 106px;
+    right: 269px;
+}
+
+.products:hover~.indicator {
+    width: 79px;
+    right: 188px;
+}
+
+.gallery:hover~.indicator {
+    width: 67px;
+    right: 119px;
+}
+
+.more:hover~.indicator {
+    width: 61px;
+    right: 59px;
+}
+
+/* THE HOVER STYLES FINISHES HERE */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 58px 0px;
+}
+
+.intro> :nth-child(1) {
+    font-size: 77px;
+    font-family: "Rubik Mono One", serif;
+    font-weight: 400;
+    display: flex;
+}
+
+#exclamation01 {
+    font-size: 77px;
+    font-family: "Rubik Mono One", serif;
+    font-weight: 400;
+}
+
+.intro> :nth-child(2) {
+    font-size: 42px;
+}
+
+#identity {
+    font-weight: bolder;
+}
